@@ -21,8 +21,8 @@ func main() {
 }
 
 func sameNecklace(one, two string) bool {
-	if (len(one) != len(two)) { return false }
-	if (one == "" && two == "") { return true }
+	if len(one) != len(two) { return false }
+	if one == "" && two == "" { return true }
 
 	for i := 0; i < len(one); i++ {
 		if one == two { return true; }
